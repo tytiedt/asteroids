@@ -46,7 +46,7 @@ def main():
         return
       for shot in shootable:
         if asteroid.collision(shot):
-          asteroid.kill()
+          asteroid.split()
           shot.kill()
           break
     
